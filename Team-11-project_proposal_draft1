@@ -1,0 +1,77 @@
+
+Project Proposal: Enhancing Network Intrusion Detection Using Graph Neural Networks and Recurrent Neural Networks with Attention Mechanisms.
+
+1. Project Title
+Enhancing Cybersecurity Intrusion Detection Using Graph Neural Networks (GNNs) and Recurrent Neural Networks (RNNs) with Attention Layers on the UNSW-NB15 Dataset
+
+2. Introduction
+In today's digital landscape, network intrusion detection is crucial for maintaining the integrity of IT infrastructures. Traditional machine learning methods have been extensively used for intrusion detection, but they often fail to fully leverage the relationships between entities in network traffic data. This proposal aims to enhance network intrusion detection using advanced deep learning models, particularly Graph Neural Networks (GNNs) combined with Recurrent Neural Networks (RNNs) and attention mechanisms, applied to the UNSW-NB15 dataset.
+
+The UNSW-NB15 dataset is a widely used benchmark in cybersecurity research that contains network traffic data, including both normal and attack activities. By leveraging the graph structure of network traffic and combining it with temporal data processing using RNNs, this project seeks to improve the accuracy and robustness of intrusion detection systems (IDS). Attention mechanisms will be integrated to allow the model to focus on important features and time steps, further enhancing its detection capabilities.
+
+3. Objectives
+The primary objective of this project is to develop and evaluate a novel machine learning model that uses GNNs, RNNs, and attention mechanisms to improve network intrusion detection. Specific objectives include:
+
+1. Model Development: Design and implement a hybrid GNN-RNN model with attention mechanisms tailored to the UNSW-NB15 dataset.
+2. Performance Evaluation: Compare the proposed model against traditional machine learning models (e.g., Random Forest, SVM) and deep learning approaches (e.g., CNN, RNN).
+3. Novelty Analysis: Conduct a literature review to ensure that this model represents a novel contribution to the field of cybersecurity.
+4. Optimization: Experiment with different GNN layers (e.g., GCN, GAT) and attention mechanisms to optimize model performance.
+5. Visualization: Visualize graph structures and the attention mechanisms to better understand how the model makes decisions.
+
+4. Methodology
+4.1 Data Preprocessing
+- Dataset: The UNSW-NB15 dataset contains 49 features that describe various network traffic characteristics. The dataset will be preprocessed by selecting key features and scaling them using standardization techniques.
+- Graph Construction: A graph structure will be constructed where nodes represent entities (e.g., IP addresses, network ports), and edges represent communication between entities.
+- Label Encoding: The dataset will be labeled with two classes: normal and attack.
+
+4.2 Model Architecture
+- Graph Neural Network (GNN): The GNN component will capture relationships between nodes (entities) by aggregating information from neighboring nodes using a Graph Convolutional Network (GCN) or Graph Attention Network (GAT).
+- Recurrent Neural Network (RNN): The RNN (LSTM) will capture sequential dependencies in the data, such as the order of network events over time.
+- Attention Mechanism: Attention layers will be added to both the GNN and RNN parts of the model to allow the network to focus on important nodes and time steps, respectively.
+- Training and Optimization: The model will be trained using cross-entropy loss and optimized using Adam optimizer. Hyperparameters such as learning rate, hidden layer size, and attention heads will be tuned.
+
+4.3 Model Evaluation
+- Training: The dataset will be split into training and test sets (80/20 split). The training set will be used to train the GNN-RNN model.
+- Metrics: Model performance will be evaluated using accuracy, precision, recall, F1-score, and AUC (Area Under the Curve) score.
+- Comparison: The proposed GNN-RNN model will be compared to traditional machine learning models (e.g., Random Forest, Logistic Regression) and existing deep learning methods.
+
+4.4 Visualization
+- Graph Visualization: Visualize the input graph structure, highlighting how the GNN aggregates node features.
+- Attention Visualization: Visualize attention weights to understand how the model focuses on different nodes and time steps.
+
+5. Expected Outcomes
+1. Improved Performance: We expect the hybrid GNN-RNN model with attention mechanisms to outperform traditional models in terms of accuracy and robustness for network intrusion detection.
+2. Insight into Model Decisions: Visualization of attention weights will provide insights into how the model makes decisions, helping identify key features and network activities that contribute to attacks.
+3. Novelty: The proposed combination of GNNs, RNNs, and attention for the UNSW-NB15 dataset is expected to represent a novel approach in the cybersecurity domain, potentially leading to a research paper.
+
+6. Timeline
+
+| Task                          | Duration     | Completion Date    |
+|----------------------------|--------------|--------------------|
+| Data Preprocessing            | TBD      | TBD            |
+| Model Design & Development    | TBD      |  TBD           |
+| Model Training & Optimization | TBD      | TBD            |
+| Evaluation & Comparison       | TBD      | TBD            |
+| Visualization & Reporting     | TBD      | TBD            |
+| Final Report & Paper Submission | TBD    | TBD            |
+
+7. Resources Required
+- Hardware: Access to high-performance GPUs for faster model training and evaluation.
+- Software: PyTorch Geometric for GNN implementation, PyTorch for RNN and attention layers, Scikit-learn for traditional ML comparison, and visualization libraries such as Matplotlib.
+- Data: The UNSW-NB15 dataset is publicly available and will be used for training and testing the model.
+
+8. Challenges and Risk Management
+- Overfitting: Regularization techniques like dropout and early stopping will be used to prevent overfitting during model training.
+- Data Imbalance: The UNSW-NB15 dataset may have an imbalanced distribution between normal and attack instances. This will be addressed using techniques like SMOTE (Synthetic Minority Over-sampling Technique) or class weighting.
+- Computational Resources: Training GNNs and RNNs, especially with attention mechanisms, can be computationally expensive. High-performance GPUs will be necessary to ensure timely model training.
+
+9. Conclusion
+This project proposes a novel approach to network intrusion detection using Graph Neural Networks and Recurrent Neural Networks with attention mechanisms. By leveraging the graph structure of network traffic and focusing on critical nodes and time steps, the model aims to improve the accuracy and robustness of intrusion detection. With the potential to outperform traditional machine learning methods and current deep learning techniques, this project could make a significant contribution to the field of cybersecurity.
+
+10. References
+- Moustafa, N., & Slay, J. (2015). UNSW-NB15: A comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set). 2015 Military Communications and Information Systems Conference (MilCIS), IEEE.
+- Kipf, T. N., & Welling, M. (2017). Semi-supervised classification with graph convolutional networks. arXiv preprint arXiv:1609.02907.
+- Velickovic, P., et al. (2018). Graph attention networks. International Conference on Learning Representations (ICLR).
+- Enhancing Multi-Class Attack Detection in Graph Neural Network through Feature Rearrangement
+- Wu, Y.; Wei, D.; Feng, J. Network attacks detection methods based on deep learning techniques: A survey. Secur. Commun. Netw. 2020, 2020, 8872923. [Google Scholar] [CrossRef]
+- Zhang, Y.; Yang, C.; Huang, K.; Li, Y. Intrusion detection of industrial internet-of-things based on reconstructed graph neural networks. IEEE Trans. Netw. Sci. Eng. 2022, 10, 2894–2905. [Google Scholar] [CrossRef]
