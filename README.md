@@ -1,4 +1,4 @@
-# Project Proposal: Attention-Augmented-GNN-RNN-Models-for-cybersecurity
+# Attention-Augmented-GNN-RNN-Models-for-cybersecurity
 
 
 ## 1. Project Title
