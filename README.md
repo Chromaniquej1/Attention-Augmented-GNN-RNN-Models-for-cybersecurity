@@ -55,18 +55,6 @@ The primary goal of this project is to improve network intrusion detection using
 
 ---
 
-## 6. Timeline
-| Task                         | Duration   | Completion Date |
-|------------------------------|------------|-----------------|
-| Data Preprocessing            | 2 weeks    | Week 2          |
-| Model Design & Development    | 4 weeks    | Week 6          |
-| Model Training & Optimization | 3 weeks    | Week 9          |
-| Evaluation & Comparison       | 2 weeks    | Week 11         |
-| Visualization & Reporting     | 2 weeks    | Week 13         |
-| Final Report & Paper          | 2 weeks    | Week 15         |
-
----
-
 ## 7. Resources Required
 - **Hardware**: High-performance GPUs for model training and evaluation.
 - **Software**: PyTorch Geometric for GNN implementation, PyTorch for RNN and attention layers, and visualization tools like Matplotlib.
